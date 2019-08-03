@@ -8,6 +8,6 @@ if num > 1 #1 by def is not a prime number
   (start..number-1).to_a #convert range to array
   range.none? do |test|
   
-[]
+
 
 end
