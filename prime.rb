@@ -5,12 +5,23 @@
 #THANKS SETH.
 
 def prime?(n)
-  if n <= 1 #negatives cannot be prime
+  
+  #negatives cannot be prime
+  
+  if n <= 1 
     return false
-  elsif n <= 3 #2+3 are both prime. simple. nice.
+    
+  #2+3 are both prime. simple. nice.
+    
+  elsif n <= 3 
     return true
-  else (2..n/2).none? do |x| #similar solution seen in alexisadorn's github repo of same lab. a bit different. I found her solution difficult to walkthrough with updated lab. this change of the range from 2 to n div 2 makes sense.
+    
+  #similar solution seen in alexisadorn's github repo of same lab. a bit 
+  #different. I found her solution difficult to walkthrough with updated
+  #lab. this change of the range from 2 to n div 2 makes sense.
+    
+  else (2..n/2).none? do |x| 
     n % x == 0
   end
-  end
+
 end
