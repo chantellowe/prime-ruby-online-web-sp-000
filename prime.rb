@@ -9,6 +9,8 @@ def prime?(num)
     range.none? do |test|
       num % test == 0 
     end
+  else
+    false
   end
 
 
