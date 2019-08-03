@@ -3,6 +3,7 @@
 
 def prime?(num)
 
+start = 2 
 
 
 end
